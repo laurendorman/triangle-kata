@@ -8,4 +8,7 @@ describe Triangle do
   it 'is equilateral triangle' do
     expect(Triangle.new(2,2,2).triangle_type).to be == :equilateral
   end
+  it 'is isosceles triangle' do
+    expect(Triangle.new(3,4,4).triangle_type).to be == :isosceles
+  end
 end
