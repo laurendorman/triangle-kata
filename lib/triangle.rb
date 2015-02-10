@@ -32,6 +32,7 @@ attr_reader :c
 # What type of triangles exist?
 
   def triangle_type
+    return :equilateral if a==b && a==c
   end
 
 end
