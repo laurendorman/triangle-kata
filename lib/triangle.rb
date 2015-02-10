@@ -34,6 +34,7 @@ attr_reader :c
   def triangle_type
     return :equilateral if a==b && a==c
     return :isosceles if a==b && a!=c || a==c && a!=b || b==c && b!=a
+    return :scalene if a!=b && b!=c
   end
 
 end

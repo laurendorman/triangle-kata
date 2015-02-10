@@ -11,4 +11,7 @@ describe Triangle do
   it 'is isosceles triangle' do
     expect(Triangle.new(3,4,4).triangle_type).to be == :isosceles
   end
+  it 'is scalene triangle' do
+    expect(Triangle.new(3,4,5).triangle_type).to be == :scalene
+  end
 end
